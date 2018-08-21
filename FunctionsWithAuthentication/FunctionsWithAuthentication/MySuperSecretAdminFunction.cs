@@ -6,16 +6,16 @@ using Microsoft.Extensions.Logging;
 
 namespace FunctionsWithAuthentication
 {
-    public static class AdminLevel
+    public static class MySuperSecretAdminFunction
     {
-        [FunctionName("AdminLevel")]
+        [FunctionName("MySuperSecretAdminFunction")]
         public static HttpResponseMessage Run(
             [HttpTrigger(AuthorizationLevel.Admin, "get", Route = null)]
             HttpRequestMessage req,
             ILogger logger)
         {
             var hello = new Hello(logger);
-            var message = hello.World(nameof(AdminLevel));
+            var message = hello.World(nameof(MySuperSecretAdminFunction));
 
             return req.CreateResponse(HttpStatusCode.OK, message);
         }
