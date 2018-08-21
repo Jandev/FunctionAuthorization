@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionsWithAuthentication", "FunctionsWithAuthentication\FunctionsWithAuthentication.csproj", "{303A50B3-45CB-4F39-A936-BE346D7449AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionsWithAuthentication", "FunctionsWithAuthentication\FunctionsWithAuthentication.csproj", "{303A50B3-45CB-4F39-A936-BE346D7449AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{14E2418A-13E2-4560-85A7-7D3095708411}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
