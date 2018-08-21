@@ -14,7 +14,9 @@ namespace FunctionsWithAuthentication
 
         public string World(string caller)
         {
-            throw new NotImplementedException();
+            var message = $"Hello from `{caller}`.";
+            this.logger.LogInformation(message);
+            return message;
         }
     }
 }
