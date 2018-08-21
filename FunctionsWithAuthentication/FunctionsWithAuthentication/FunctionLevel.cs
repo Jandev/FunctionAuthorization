@@ -15,7 +15,7 @@ namespace FunctionsWithAuthentication
             ILogger logger)
         {
             var hello = new Hello(logger);
-            var message = hello.World(nameof(AdminLevel));
+            var message = hello.World(nameof(FunctionLevel));
 
             return req.CreateResponse(HttpStatusCode.OK, message);
         }
